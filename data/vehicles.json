@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "vehicles": [
+    {
+      "plate": "DJP8094",
+      "state": "NY",
+      "description": "Demo profile. Vehicle details have not been added.",
+      "comments": [
+        {
+          "id": "sample-ny-1",
+          "text": "Good driver, signals early, and understands right of way",
+          "rating": 4.5,
+          "createdAt": "2026-09-14T12:00:00.000Z",
+          "source": "sample"
+        }
+      ]
+    },
+    {
+      "plate": "DEMO123",
+      "state": "NY",
+      "description": "Fictional test vehicle. Notes are examples only.",
+      "comments": [
+        {
+          "id": "sample-demo-ny-1",
+          "text": "typical bmw driver cutting up",
+          "rating": 1.5,
+          "createdAt": "2026-09-14T12:00:00.000Z",
+          "source": "sample"
+        }
+      ]
+    },
+    {
+      "plate": "TEST456",
+      "state": "TX",
+      "description": "Fictional test vehicle. Notes are examples only.",
+      "comments": [
+        {
+          "id": "sample-tx-1",
+          "text": "A little more space between cars would help everyone feel more comfortable.",
+          "createdAt": "2026-09-02T16:00:00.000Z",
+          "source": "sample"
+        }
+      ]
+    }
+  ]
+}
