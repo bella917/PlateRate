@@ -1,0 +1,201 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #edf4ff;
+  color: #152d56;
+  line-height: 1.5;
+}
+
+header {
+  background-color: #174dc4;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+main {
+  width: 90%;
+  max-width: 700px;
+  margin: 25px auto;
+}
+
+section {
+  background-color: white;
+  border: 1px solid #bdcde3;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #174dc4;
+  margin-top: 0;
+  overflow-wrap: anywhere;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #9cabc0;
+  font: inherit;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.checkbox-label {
+  background-color: #edf4ff;
+  padding: 10px;
+  font-weight: normal;
+}
+
+button {
+  background-color: #174dc4;
+  color: white;
+  border: 1px solid #174dc4;
+  padding: 8px 12px;
+  margin-top: 10px;
+  font: inherit;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #103c9d;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.note {
+  background-color: #f6f9ff;
+  border: 1px solid #dce5f2;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+
+.note p {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.help-text {
+  color: #566882;
+  font-size: 14px;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+:focus-visible {
+  outline: 3px solid #739bf0;
+  outline-offset: 3px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #566882;
+}
+
+/* The blue layer fills the gray stars, including half stars. */
+.stars {
+  position: relative;
+  display: inline-block;
+  color: #bdcde3;
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  line-height: 1;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.star-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  color: #174dc4;
+}
+
+#average-rating {
+  margin-bottom: 15px;
+}
+
+.note-rating {
+  margin-top: 8px;
+}
+
+.rating-field {
+  border: 0;
+  padding: 0;
+  margin: 20px 0;
+  min-width: 0;
+}
+
+.rating-field legend {
+  padding: 0;
+  font-weight: bold;
+}
+
+.rating-picker {
+  font-size: 48px;
+  user-select: none;
+}
+
+#rating-fill {
+  width: 0;
+}
+
+.rating-options {
+  position: absolute;
+  inset: 0;
+  display: flex;
+}
+
+/* Each label covers half a star. The first covers one full star. */
+.rating-options label {
+  flex: 1;
+  margin: 0;
+  cursor: pointer;
+}
+
+.rating-options .first-star {
+  flex: 2;
+}
+
+.rating-options input,
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.rating-options input:focus-visible + label {
+  outline: 3px solid #739bf0;
+  outline-offset: 3px;
+}
